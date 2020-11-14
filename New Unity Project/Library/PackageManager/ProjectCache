@@ -5,16 +5,16 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637408437275157478
-    m_Hash: 2348755458
+      ticks: 637409636254996485
+    m_Hash: 2429001870
   m_LockFileStatus:
     m_FilePath: D:/Github/JetGame/New Unity Project/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637408437394130701
-    m_Hash: 84400987
+      ticks: 637409636356682340
+    m_Hash: 664634206
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_PackageAssets:
@@ -114,63 +114,6 @@ m_PackageAssets:
         type: git
         url: https://github.cds.internal.unity3d.com/unity/com.unity.cloud.collaborate.git
         revision: fa825106f349f996acff22f718845eab46ca2d7c
-        path: 
-    - packageId: com.unity.ext.nunit@1.0.0
-      testable: 0
-      isDirectDependency: 1
-      version: 1.0.0
-      source: 1
-      resolvedPath: D:\Github\JetGame\New Unity Project\Library\PackageCache\com.unity.ext.nunit@1.0.0
-      assetPath: Packages/com.unity.ext.nunit
-      name: com.unity.ext.nunit
-      displayName: Custom NUnit
-      author:
-        name: 
-        email: 
-        url: 
-      category: Libraries
-      type: 
-      description: Custom version of the nunit package build to work with Unity.
-        Used by the Unity Test Framework.
-      status: 4
-      errors: []
-      versions:
-        all:
-        - 0.1.5-preview
-        - 0.1.6-preview
-        - 0.1.9-preview
-        - 1.0.0
-        compatible:
-        - 0.1.5-preview
-        - 0.1.6-preview
-        - 0.1.9-preview
-        - 1.0.0
-        verified: 1.0.0
-      dependencies: []
-      resolvedDependencies: []
-      keywords:
-      - nunit
-      - unittest
-      - test
-      registry:
-        id: main
-        name: 
-        url: https://packages.unity.com
-        scopes: []
-        isDefault: 1
-        capabilities: 7
-      hasRegistry: 1
-      hideInEditor: 1
-      entitlements:
-        isAllowed: 1
-      isAssetStorePackage: 0
-      datePublishedTicks: 636898893830000000
-      documentationUrl: 
-      hasRepository: 1
-      repository:
-        type: git
-        url: git@gitlab.cds.internal.unity3d.com/upm-packages/core/com.unity.ext.nunit.git
-        revision: c8f5044ffe6adb909f9836160b0bdaa30f2d1ec9
         path: 
     - packageId: com.unity.ide.rider@1.2.1
       testable: 0
@@ -626,12 +569,12 @@ m_PackageAssets:
         url: https://github.cds.internal.unity3d.com/unity/com.unity.textmeshpro.git
         revision: 1604b62e543216408311bcd1355a7a9ca1e65765
         path: 
-    - packageId: com.unity.timeline@1.2.6
+    - packageId: com.unity.timeline@1.3.6
       testable: 0
       isDirectDependency: 1
-      version: 1.2.6
+      version: 1.3.6
       source: 1
-      resolvedPath: D:\Github\JetGame\New Unity Project\Library\PackageCache\com.unity.timeline@1.2.6
+      resolvedPath: D:\Github\JetGame\New Unity Project\Library\PackageCache\com.unity.timeline@1.3.6
       assetPath: Packages/com.unity.timeline
       name: com.unity.timeline
       displayName: Timeline
@@ -745,13 +688,13 @@ m_PackageAssets:
       entitlements:
         isAllowed: 1
       isAssetStorePackage: 0
-      datePublishedTicks: 637078934930000000
+      datePublishedTicks: 0
       documentationUrl: 
       hasRepository: 1
       repository:
         type: git
-        url: git@github.cds.internal.unity3d.com:unity/com.unity.timeline.git
-        revision: 39cb37bbeda9d8c0fda212fe2ead783c7c502dc0
+        url: https://github.cds.internal.unity3d.com/unity/com.unity.timeline.git
+        revision: d9d35444c8403989a7e2099b1dafeb73d2033e37
         path: 
     - packageId: com.unity.ugui@1.0.0
       testable: 0
@@ -2557,6 +2500,63 @@ m_PackageAssets:
         type: 
         url: 
         revision: 
+        path: 
+    - packageId: com.unity.ext.nunit@1.0.0
+      testable: 0
+      isDirectDependency: 0
+      version: 1.0.0
+      source: 1
+      resolvedPath: D:\Github\JetGame\New Unity Project\Library\PackageCache\com.unity.ext.nunit@1.0.0
+      assetPath: Packages/com.unity.ext.nunit
+      name: com.unity.ext.nunit
+      displayName: Custom NUnit
+      author:
+        name: 
+        email: 
+        url: 
+      category: Libraries
+      type: 
+      description: Custom version of the nunit package build to work with Unity.
+        Used by the Unity Test Framework.
+      status: 4
+      errors: []
+      versions:
+        all:
+        - 0.1.5-preview
+        - 0.1.6-preview
+        - 0.1.9-preview
+        - 1.0.0
+        compatible:
+        - 0.1.5-preview
+        - 0.1.6-preview
+        - 0.1.9-preview
+        - 1.0.0
+        verified: 1.0.0
+      dependencies: []
+      resolvedDependencies: []
+      keywords:
+      - nunit
+      - unittest
+      - test
+      registry:
+        id: main
+        name: 
+        url: https://packages.unity.com
+        scopes: []
+        isDefault: 1
+        capabilities: 7
+      hasRegistry: 1
+      hideInEditor: 1
+      entitlements:
+        isAllowed: 1
+      isAssetStorePackage: 0
+      datePublishedTicks: 636898893830000000
+      documentationUrl: 
+      hasRepository: 1
+      repository:
+        type: git
+        url: git@gitlab.cds.internal.unity3d.com/upm-packages/core/com.unity.ext.nunit.git
+        revision: c8f5044ffe6adb909f9836160b0bdaa30f2d1ec9
         path: 
   m_LocalPackages:
     m_LocalFileStatus: []
