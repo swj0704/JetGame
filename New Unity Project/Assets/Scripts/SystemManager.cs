@@ -7,7 +7,7 @@ public class SystemManager : MonoBehaviour
 
     static SystemManager instance;
 
-    public SystemManager Instance{
+    public static SystemManager Instance{
         get{
             return instance;
         }

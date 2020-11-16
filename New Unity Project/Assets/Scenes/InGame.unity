@@ -315,6 +315,17 @@ Transform:
   m_Father: {fileID: 985374249}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &484933289 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3869677700701608851, guid: 4f5a69e905b7c714fbea0a799a0c30dc, type: 3}
+  m_PrefabInstance: {fileID: 8396293132139656661}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ae5a27b1d63a28449b351a4c6fc67eb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &745871401
 GameObject:
   m_ObjectHideFlags: 0
@@ -411,6 +422,11 @@ Transform:
   m_Father: {fileID: 985374249}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &745946040 stripped
+BoxCollider:
+  m_CorrespondingSourceObject: {fileID: 5765439740955294286, guid: 4f5a69e905b7c714fbea0a799a0c30dc, type: 3}
+  m_PrefabInstance: {fileID: 8396293132139656661}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &756201856
 GameObject:
   m_ObjectHideFlags: 0
@@ -684,6 +700,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1228860671}
+  - component: {fileID: 1228860672}
   m_Layer: 0
   m_Name: SystemManager
   m_TagString: Untagged
@@ -705,6 +722,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1228860672
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1228860670}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fcd1745c275d86c4f82f1e79d7b51517, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 484933289}
 --- !u!1 &1949658555
 GameObject:
   m_ObjectHideFlags: 0
@@ -1126,6 +1156,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 3869677700701608851, guid: 4f5a69e905b7c714fbea0a799a0c30dc, type: 3}
+      propertyPath: Speed
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3869677700701608851, guid: 4f5a69e905b7c714fbea0a799a0c30dc, type: 3}
+      propertyPath: boxCollider
+      value: 
+      objectReference: {fileID: 745946040}
+    - target: {fileID: 3869677700701608851, guid: 4f5a69e905b7c714fbea0a799a0c30dc, type: 3}
+      propertyPath: MainBGQuadTransform
+      value: 
+      objectReference: {fileID: 2133171490}
     - target: {fileID: 6384830853766475747, guid: 4f5a69e905b7c714fbea0a799a0c30dc, type: 3}
       propertyPath: m_RootOrder
       value: 3
