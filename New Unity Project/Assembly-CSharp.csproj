@@ -37,13 +37,14 @@
   </PropertyGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\BGScroller.cs" />
+     <Compile Include="Assets\Scripts\EnemyManager.cs" />
      <Compile Include="Assets\Scripts\Enemy.cs" />
+     <Compile Include="Assets\Scripts\EnemyFactory.cs" />
      <Compile Include="Assets\Scripts\Player.cs" />
      <Compile Include="Assets\StarSparrow\Readme\Readme Files\Scripts\ReadmeStarSparrow.cs" />
      <Compile Include="Assets\Scripts\SystemManager.cs" />
      <Compile Include="Assets\Scripts\InputController.cs" />
-     <Compile Include="Assets\Scripts\EnemyFactory.cs" />
-     <Compile Include="Assets\Scripts\EnemyManager.cs" />
+     <Compile Include="Assets\Scripts\Bullet.cs" />
     <Reference Include="UnityEngine">
         <HintPath>C:/Program Files/Unity/Hub/Editor/2020.1.13f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>

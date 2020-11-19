@@ -9,12 +9,23 @@ public class Player : MonoBehaviour
 
     [SerializeField]
     BoxCollider boxCollider;
+    
+    
+    [SerializeField]
+    float Speed;
 
     [SerializeField]
     Transform MainBGQuadTransform;
 
     [SerializeField]
-    float Speed;
+    Transform FireTransform;
+
+    [SerializeField]
+    GameObject Bullet;
+
+    [SerializeField]
+    float BulletSpeed = 1f;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -38,7 +49,7 @@ public class Player : MonoBehaviour
     }
 
     public void ProcessInput(Vector3 moveDirection){
-        MoveVector = moveDirection * Speed * Time.deltaTime;
+        MoveVector = moveDirection * BulletSpeed * Time.deltaTime;
     }
 
     Vector3 AdjustMoveVector(Vector3 moveVector){
@@ -71,6 +82,14 @@ public class Player : MonoBehaviour
     }
 
     public void OnCrash(Enemy enemy){
+
+    }
+
+    public void Fire(){
+        GameObject go = Instantiate(Bullet);
+
+        Bullet bullet = go.GetComponent<Bullet>();
+        bullet.Fire(OwnerSide.Player, FireTransform.position, FireTransform.right, BulletSpeed);
 
     }
 }
