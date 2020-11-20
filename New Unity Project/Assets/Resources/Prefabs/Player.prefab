@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8536924679417686486}
   - component: {fileID: 5765439740955294286}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: PlayerCollider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -55,7 +55,7 @@ GameObject:
   - component: {fileID: 6384830853766475747}
   - component: {fileID: 3869677700701608851}
   - component: {fileID: 4250198706061582978}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -93,11 +93,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MoveVector: {x: 0, y: 0, z: 0}
   boxCollider: {fileID: 0}
+  Speed: 1
   MainBGQuadTransform: {fileID: 0}
   FireTransform: {fileID: 4720956158135375515}
   Bullet: {fileID: 4300830848548602246, guid: 89c38ccb1af5abf409c556ddaf80ba7d, type: 3}
   BulletSpeed: 1
-  Speed: 1
 --- !u!54 &4250198706061582978
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -123,7 +123,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4720956158135375515}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: FirePoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -155,7 +155,7 @@ GameObject:
   - component: {fileID: 8929503350341526906}
   - component: {fileID: 8904168712608232252}
   - component: {fileID: 8912680716779755760}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: StarSparrow1
   m_TagString: Untagged
   m_Icon: {fileID: 0}

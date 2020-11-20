@@ -9,6 +9,7 @@ public enum OwnerSide : int {
 
 public class Bullet : MonoBehaviour
 {
+    const float LifeTime = 15.0f;   
 
     OwnerSide ownerSide = OwnerSide.Player;
     [SerializeField]
@@ -17,6 +18,10 @@ public class Bullet : MonoBehaviour
     float Speed = 0f;
 
     bool NeedMove = false;
+
+    bool Hited = false;
+
+    float FiredTime;
     // Start is called before the first frame update
     void Start()
     {
@@ -26,7 +31,9 @@ public class Bullet : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        if(processDisapperCondition()){
+            return;
+        }
         
 
         UpdateMove();
@@ -37,7 +44,12 @@ public class Bullet : MonoBehaviour
         if(!NeedMove)
             return;
         
+
+
+
         Vector3 moveVector = moveDirection.normalized * Speed * Time.deltaTime;
+
+        moveVector = AdjustMove(moveVector);
 
         transform.position += moveVector;
     }
@@ -47,7 +59,63 @@ public class Bullet : MonoBehaviour
         transform.position = firePosition;
         moveDirection = direction;
         Speed = speed;
+        FiredTime = Time.time;
 
         NeedMove = true;
+    }
+
+    Vector3 AdjustMove(Vector3 moveVector){
+        RaycastHit hitInfo;
+
+        if(Physics.Linecast(transform.position, transform.position + moveVector, out hitInfo)){
+
+            moveVector = hitInfo.point - transform.position;
+            OnBulletCollision(hitInfo.collider);
+        }
+
+        return moveVector;
+    }
+
+    void OnBulletCollision(Collider collider){
+
+        if(Hited){
+            return;
+        }
+        
+        Collider myCollider = GetComponentInChildren<Collider>();
+        myCollider.enabled = false;
+
+        Hited = true;
+        NeedMove = false;
+
+        if(ownerSide == OwnerSide.Player){
+            Enemy enemy = collider.GetComponentInParent<Enemy>();
+        } else {
+            Player player = collider.GetComponentInParent<Player>();
+        }
+
+    }
+
+    private void OnTriggerEnter(Collider other){
+
+        OnBulletCollision(other);
+
+    }
+
+    bool processDisapperCondition(){
+        if(transform.position.x > 15.0f || transform.position.x < -15.0f || transform.position.y > 15.0f || transform.position.y < -15.0f){
+            Disapper();
+            return true;
+        }
+        else if(Time.time - FiredTime > LifeTime){
+            Disapper();
+            return true;
+        }
+
+        return false;
+    }
+
+    void Disapper(){
+        Destroy(gameObject);
     }
 }
